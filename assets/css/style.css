@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Primary*/
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /*Neutral*/
+    --Verydarkblue_mainBG: hsl(217, 54%, 11%);
+    --Verydarkblue_cardBG: hsl(216, 50%, 16%);
+    --Verydarkblue_line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Verydarkblue_mainBG);
+}
+
+.container{
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--Verydarkblue_cardBG);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    max-width: 100vw;
+    height: 600px;
+    border-radius: 12px;
+}
+
+.card .image{
+    width: 300px;
+    border-radius: 12px;
+}
+
+.card .image:hover{
+    cursor: pointer;
+}
+
+.card .info{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 280px;
+    max-height: 100%;
+    height: 240px;
+}
+
+.card .info .info-h2{
+    padding-top: 18px;
+    color: var(--White);
+}
+
+.card .info .info-h2:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.card .info .info-p{
+    padding-top: 30px;
+    color: var(--Softblue);
+    font-size: 0.90rem;
+    font-weight: 100;
+}
+
+.etereum-clock{
+    display: flex;
+    gap: 100px;
+    padding-top: 30px;
+    box-shadow: 0px 1px 0px 0px var(--Verydarkblue_line);
+}
+
+.etereum-clock .info-etereum{
+    color: var(--Cyan);
+    font-size: 0.9em;
+    padding-bottom: 18px;
+}
+
+.etereum-clock .info-clock{
+    color: var(--Softblue);
+    font-size: 0.9em;   
+}
+
+.creator{
+    display: flex;
+    gap: 18px;
+    padding-top: 9px;
+}
+
+.creator img{
+    margin-top: 12px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid var(--White);
+    border-radius: 50%;
+}
+
+.creator .creator-name{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: var(--White);
+}
+
+.creator .creator-name:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.creator-name span{
+    color: var(--Softblue);
+}
